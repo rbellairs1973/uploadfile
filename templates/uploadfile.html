@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DXF Checker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/static/js/uploadfile.js"></script>
+</head>
+<body>
+  <title>Planon Workplace Insights CAD checker</title>
+  <h1>Planon Workplace Insights CAD checker</h1>
+  <form method=post enctype=multipart/form-data>
+    <input type=file name=file accept=".dxf">
+    <input type=submit value="Check">
+  </form>
+
+  <br>
+  <p id="status">&nbsp</p>
+
+  <textarea id="output" name="output" style="width:600px; height:600px;" readonly>
+  {{output}}
+  </textarea>
+</body>
+</html>
